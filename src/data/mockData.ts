@@ -1,0 +1,425 @@
+interface Property {
+  id: number;
+  title: string;
+  price: number;
+  location: string;
+  city: string;
+  state: string;
+  bedrooms: number;
+  bathrooms: number;
+  sqft: number;
+  type: string;
+  verified: boolean;
+  image: string;
+  images: string[];
+  description: string;
+  amenities: string[];
+  agent: string;
+  agentPhone: string;
+  featured: boolean;
+}
+
+export const properties: Array<Property> = [
+  {
+    id: 1,
+    title: "Modern Luxury Villa with Pool",
+    price: 4500,
+    location: "Los Angeles, CA",
+    city: "Los Angeles",
+    state: "CA",
+    bedrooms: 4,
+    bathrooms: 3,
+    sqft: 3200,
+    type: "House",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+      "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png",
+      "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png",
+    ],
+    description:
+      "Stunning modern villa featuring open-concept living, floor-to-ceiling windows, and a beautiful outdoor pool. Perfect for entertaining with a gourmet kitchen and spacious backyard.",
+    amenities: [
+      "Pool",
+      "Garage",
+      "Garden",
+      "Modern Kitchen",
+      "Walk-in Closets",
+    ],
+    agent: "Sarah Johnson",
+    agentPhone: "(310) 555-0123",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Contemporary Black House",
+    price: 3800,
+    location: "Seattle, WA",
+    city: "Seattle",
+    state: "WA",
+    bedrooms: 3,
+    bathrooms: 2,
+    sqft: 2400,
+    type: "House",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1726471809607-b7f016a1696e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1726471809607-b7f016a1696e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Sleek contemporary home with bold architecture and modern amenities. Features an outdoor pool and beautifully landscaped yard.",
+    amenities: ["Pool", "Modern Design", "Landscaped Yard", "Two-Car Garage"],
+    agent: "Michael Chen",
+    agentPhone: "(206) 555-0456",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Stylish Modern Apartment",
+    price: 2200,
+    location: "Austin, TX",
+    city: "Austin",
+    state: "TX",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1200,
+    type: "Apartment",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1749704647512-3f556575a241?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1749704647512-3f556575a241?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Beautiful modern apartment with high-end finishes, open kitchen, and plenty of natural light. Located in vibrant downtown Austin.",
+    amenities: [
+      "Modern Kitchen",
+      "Downtown Location",
+      "Natural Light",
+      "In-Unit Laundry",
+    ],
+    agent: "Emily Rodriguez",
+    agentPhone: "(512) 555-0789",
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "Urban Modern Residences",
+    price: 2800,
+    location: "Portland, OR",
+    city: "Portland",
+    state: "OR",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1400,
+    type: "Apartment",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1597047084897-51e81819a499?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxyZW50YWwlMjBwcm9wZXJ0aWVzfGVufDB8fHx8MTc2NjI1NDQwOXww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1597047084897-51e81819a499?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxyZW50YWwlMjBwcm9wZXJ0aWVzfGVufDB8fHx8MTc2NjI1NDQwOXww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Modern white building in the heart of Portland. Spacious apartments with contemporary design and excellent city views.",
+    amenities: ["City Views", "Fitness Center", "Bike Storage", "Rooftop Deck"],
+    agent: "David Thompson",
+    agentPhone: "(503) 555-0234",
+    featured: true,
+  },
+  {
+    id: 5,
+    title: "Residential District Homes",
+    price: 3200,
+    location: "Denver, CO",
+    city: "Denver",
+    state: "CO",
+    bedrooms: 3,
+    bathrooms: 2,
+    sqft: 2100,
+    type: "Townhouse",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1703693837521-e76ee7b8dc74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxyZW50YWwlMjBwcm9wZXJ0aWVzfGVufDB8fHx8MTc2NjI1NDQwOXww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1703693837521-e76ee7b8dc74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxyZW50YWwlMjBwcm9wZXJ0aWVzfGVufDB8fHx8MTc2NjI1NDQwOXww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Beautiful townhouse in a quiet residential area. Great neighborhood with parks and schools nearby.",
+    amenities: ["Quiet Neighborhood", "Near Parks", "Two-Car Garage", "Patio"],
+    agent: "Jessica Martinez",
+    agentPhone: "(720) 555-0567",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "Luxury Estate with Pool",
+    price: 5200,
+    location: "Miami, FL",
+    city: "Miami",
+    state: "FL",
+    bedrooms: 5,
+    bathrooms: 4,
+    sqft: 4200,
+    type: "House",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2NjI1NDQxNXww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2NjI1NDQxNXww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Magnificent luxury estate with stunning architecture and resort-style pool. Perfect for luxury living in Miami.",
+    amenities: [
+      "Resort Pool",
+      "Ocean Views",
+      "Gourmet Kitchen",
+      "Home Theater",
+      "Wine Cellar",
+    ],
+    agent: "Robert Williams",
+    agentPhone: "(305) 555-0890",
+    featured: true,
+  },
+  {
+    id: 7,
+    title: "Suburban Family Home",
+    price: 2600,
+    location: "Charlotte, NC",
+    city: "Charlotte",
+    state: "NC",
+    bedrooms: 3,
+    bathrooms: 2,
+    sqft: 1900,
+    type: "House",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1605146769289-440113cc3d00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2NjI1NDQxNXww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1605146769289-440113cc3d00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2NjI1NDQxNXww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Charming suburban home perfect for families. Features a large backyard, modern updates, and excellent schools nearby.",
+    amenities: [
+      "Large Backyard",
+      "Near Schools",
+      "Updated Kitchen",
+      "Two-Car Garage",
+    ],
+    agent: "Amanda Davis",
+    agentPhone: "(704) 555-0123",
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "Classic Brick Apartments",
+    price: 1800,
+    location: "Boston, MA",
+    city: "Boston",
+    state: "MA",
+    bedrooms: 1,
+    bathrooms: 1,
+    sqft: 850,
+    type: "Apartment",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Classic brick building with historic charm in Boston. Cozy one-bedroom apartment with hardwood floors and modern amenities.",
+    amenities: [
+      "Hardwood Floors",
+      "Historic Building",
+      "Near Transit",
+      "Pet Friendly",
+    ],
+    agent: "Christopher Lee",
+    agentPhone: "(617) 555-0456",
+    featured: false,
+  },
+  {
+    id: 9,
+    title: "Contemporary City Lofts",
+    price: 3400,
+    location: "Chicago, IL",
+    city: "Chicago",
+    state: "IL",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1600,
+    type: "Apartment",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Modern loft-style apartments in a striking black and white building. High ceilings and contemporary finishes throughout.",
+    amenities: [
+      "High Ceilings",
+      "Modern Design",
+      "Fitness Center",
+      "Concierge",
+    ],
+    agent: "Nicole Brown",
+    agentPhone: "(312) 555-0789",
+    featured: false,
+  },
+  {
+    id: 10,
+    title: "Colorful Urban Community",
+    price: 2100,
+    location: "Phoenix, AZ",
+    city: "Phoenix",
+    state: "AZ",
+    bedrooms: 2,
+    bathrooms: 1,
+    sqft: 1100,
+    type: "Apartment",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1619542402915-dcaf30e4e2a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Vibrant apartment community with unique architecture. Great amenities and community spaces for residents.",
+    amenities: ["Community Pool", "BBQ Area", "Pet Park", "Covered Parking"],
+    agent: "Brian Wilson",
+    agentPhone: "(602) 555-0234",
+    featured: false,
+  },
+  {
+    id: 11,
+    title: "Modern White Apartments",
+    price: 2400,
+    location: "San Diego, CA",
+    city: "San Diego",
+    state: "CA",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1300,
+    type: "Apartment",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1551361415-69c87624334f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1551361415-69c87624334f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxhcGFydG1lbnRzfGVufDB8fHx8MTc2NjI1NDQyMnww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Clean, contemporary apartment building near the beach. Modern amenities and beautiful San Diego weather year-round.",
+    amenities: ["Near Beach", "Modern Appliances", "Pool", "Gym"],
+    agent: "Lauren Garcia",
+    agentPhone: "(619) 555-0567",
+    featured: true,
+  },
+  {
+    id: 12,
+    title: "Elegant Desert Home",
+    price: 3600,
+    location: "Scottsdale, AZ",
+    city: "Scottsdale",
+    state: "AZ",
+    bedrooms: 4,
+    bathrooms: 3,
+    sqft: 2800,
+    type: "House",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob21lc3xlbnwwfHx8fDE3NjYyNTQ0MDR8MA&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Beautiful desert home with stunning mountain views. Features modern architecture and outdoor living spaces.",
+    amenities: ["Mountain Views", "Outdoor Living", "Pool", "Three-Car Garage"],
+    agent: "Kevin Anderson",
+    agentPhone: "(480) 555-0890",
+    featured: false,
+  },
+  {
+    id: 13,
+    title: "Historic City Apartment",
+    price: 2900,
+    location: "Philadelphia, PA",
+    city: "Philadelphia",
+    state: "PA",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1400,
+    type: "Apartment",
+    verified: true,
+    image:
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2NjI1NDQxNXww&ixlib=rb-4.1.0&q=85",
+    images: [
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxyZWFsJTIwZXN0YXRlfGVufDB8fHx8MTc2NjI1NDQxNXww&ixlib=rb-4.1.0&q=85",
+    ],
+    description:
+      "Charming apartment in a historic Philadelphia neighborhood. Blend of classic architecture and modern updates.",
+    amenities: [
+      "Historic District",
+      "Updated Interior",
+      "Near Transit",
+      "Hardwood Floors",
+    ],
+    agent: "Melissa Taylor",
+    agentPhone: "(215) 555-0123",
+    featured: false,
+  },
+  {
+    id: 14,
+    title: "Downtown Studio Loft",
+    price: 1600,
+    location: "Nashville, TN",
+    city: "Nashville",
+    state: "TN",
+    bedrooms: 1,
+    bathrooms: 1,
+    sqft: 650,
+    type: "Apartment",
+    verified: true,
+    image: "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png",
+    images: [
+      "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png",
+    ],
+    description:
+      "Cozy studio loft in the heart of downtown Nashville. Perfect for young professionals who want to be in the center of the action.",
+    amenities: [
+      "Downtown Location",
+      "Modern Finishes",
+      "Near Nightlife",
+      "Walkable",
+    ],
+    agent: "Justin Moore",
+    agentPhone: "(615) 555-0456",
+    featured: false,
+  },
+  {
+    id: 15,
+    title: "Spa-Like Modern Condo",
+    price: 3100,
+    location: "San Francisco, CA",
+    city: "San Francisco",
+    state: "CA",
+    bedrooms: 2,
+    bathrooms: 2,
+    sqft: 1500,
+    type: "Condo",
+    verified: true,
+    image: "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png",
+    images: [
+      "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png",
+    ],
+    description:
+      "Luxury condo with spa-like bathrooms and high-end finishes. Located in prestigious San Francisco neighborhood.",
+    amenities: ["Luxury Finishes", "City Views", "Doorman", "Parking Included"],
+    agent: "Stephanie White",
+    agentPhone: "(415) 555-0789",
+    featured: false,
+  },
+];
