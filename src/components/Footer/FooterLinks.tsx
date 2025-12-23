@@ -14,9 +14,7 @@ interface FooterLinksProps {
 const FooterLinks: FC<FooterLinksProps> = ({ title, links }) => {
   return (
     <div>
-      {title && (
-        <h4 className="font-semibold mb-4 text-white">{title}</h4>
-      )}
+      {title && <h4 className="font-semibold mb-4 text-white">{title}</h4>}
 
       <ul className="space-y-2 text-sm text-gray-400">
         {links.map((link) => (

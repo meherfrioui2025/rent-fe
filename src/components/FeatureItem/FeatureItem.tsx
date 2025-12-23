@@ -6,7 +6,7 @@ interface FeatureItemProps {
   iconClassName?: string;
 }
 
- const FeatureItem: React.FC<FeatureItemProps> = ({
+const FeatureItem: React.FC<FeatureItemProps> = ({
   label,
   icon: Icon,
   iconClassName = "",
