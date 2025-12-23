@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Card, CardContent, CardHeader } from "../ui/Card";
+import { Card, CardContent, CardHeader } from "../UI/Card";
 
 interface FeatureItem {
   title: string;

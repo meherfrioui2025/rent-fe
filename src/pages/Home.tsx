@@ -8,7 +8,7 @@ import PropertyCard from "../components/PropertyCard/PropertyCard.tsx";
 import FeatureItem from "../components/FeatureItem/FeatureItem.tsx";
 import SearchBar from "../components/SearchBar/SearchBar";
 import { properties } from "../data/mockData.ts";
-import Button from "../components/ui/Button.tsx";
+import Button from "../components/UI/Button.tsx";
 
 export const FEATURES = [
   {
