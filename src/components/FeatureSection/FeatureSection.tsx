@@ -51,7 +51,6 @@ const FeatureSection: FC<FeatureSectionProps> = ({
           ))}
         </div>
       </div>
-      
     </section>
   );
 };
