@@ -5,7 +5,7 @@ type ButtonVariant = "default" | "destructive" | "outline" | "secondary";
 type ButtonSize = "default" | "sm" | "lg" | "icon";
 
 const BASE_BUTTON_CLASS =
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors " +
+  "inline-flex items-center cursor-pointer justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors " +
   "focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring " +
   "disabled:pointer-events-none disabled:opacity-50 border border-gray-200";
 
@@ -13,7 +13,7 @@ const BUTTON_VARIANTS: Record<ButtonVariant, string> = {
   default: "bg-blue-300 text-blue-300 shadow hover:bg-blue-300/90",
   destructive: "bg-red-300 text-red-300 shadow-sm hover:bg-red-300/90",
   outline:
-    "border border-input shadow-sm hover:bg-gray-100 hover:text-gray-100",
+    "border border-input shadow-sm hover:bg-gray-100 hover:text-gray-600",
   secondary: "bg-gray-300 text-gray-300 shadow-sm hover:bg-gray-300/80",
 };
 

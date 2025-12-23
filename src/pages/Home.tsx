@@ -85,7 +85,7 @@ const Home = () => {
               </p>
             </div>
             <Link to="/listings">
-              <Button variant="outline" className="group">
+              <Button variant="outline">
                 View All
                 <BsArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
