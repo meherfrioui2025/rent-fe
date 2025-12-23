@@ -6,6 +6,7 @@ import { StrictMode } from "react";
 import Layout from "./layout/Layout.tsx";
 import Home from "./pages/Home.tsx";
 import "./index.css";
+import Listings from "./pages/Listings.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/listings",
+        element: <Listings />,
       },
     ],
   },
