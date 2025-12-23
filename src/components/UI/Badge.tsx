@@ -9,10 +9,10 @@ const BADGE_VARIANTS: Record<BadgeVariant, string> = {
   default:
     "border-transparent bg-blue-300 text-blue-300 shadow hover:bg-blue-300/80",
   secondary:
-    "border-transparent bg-gray-200 text-gray-200 hover:bg-gray-200/80",
+    "border-transparent bg-gray-200 text-gray-600 hover:bg-gray-200/80",
   destructive:
     "border-transparent bg-destructive text-destructive shadow hover:bg-destructive/80",
-  outline: "text-gray-600 border-gray-200 hover:bg-gray-100",
+  outline: "text-gray-900 border-gray-200 hover:bg-gray-100",
 };
 
 interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
