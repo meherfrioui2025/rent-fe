@@ -8,8 +8,8 @@ import {
   BiSquare,
 } from "react-icons/bi";
 
-import { Card, CardContent } from "../UI/Card";
-import Badge from "../UI/Badge";
+import { Card, CardContent } from "../ui/Card";
+import Badge from "../ui/Badge";
 
 export type Property = {
   id: number;
