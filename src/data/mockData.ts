@@ -1,23 +1,4 @@
-interface Property {
-  id: number;
-  title: string;
-  price: number;
-  location: string;
-  city: string;
-  state: string;
-  bedrooms: number;
-  bathrooms: number;
-  sqft: number;
-  type: string;
-  verified: boolean;
-  image: string;
-  images: string[];
-  description: string;
-  amenities: string[];
-  agent: string;
-  agentPhone: string;
-  featured: boolean;
-}
+import { Property } from "../components/PropertyCard/PropertyCard";
 
 export const properties: Array<Property> = [
   {

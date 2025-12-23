@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+:root {
+  --primary: 0 0% 9%;
+  --secondary: 0 0% 96.1%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}

@@ -1,8 +1,8 @@
 import { BiSearch } from "react-icons/bi";
 import { FC } from "react";
 
-import Input from "../UI/Input";
 import Button from "../UI/Button";
+import Input from "../UI/Input";
 
 interface SearchBarProps {
   searchTerm: string;
