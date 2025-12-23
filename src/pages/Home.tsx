@@ -8,6 +8,7 @@ import FeatureItem from "../components/FeatureItem/FeatureItem.tsx";
 import SearchBar from "../components/SearchBar/SearchBar";
 import { properties } from "../data/mockData.ts";
 import Button from "../components/ui/Button.tsx";
+import FeatureSection from "../components/FeatureSection/FeatureSection.tsx";
 
 export const FEATURES = [
   {
@@ -97,6 +98,54 @@ const Home = () => {
               <PropertyCard key={property.id} property={property} />
             ))}
           </div>
+        </div>
+      </section>
+
+      <FeatureSection
+        title="Why Choose RentHome?"
+        subtitle="We make finding your perfect rental home simple, secure, and stress-free."
+        features={[
+          {
+            title: "Verified Listings",
+            description:
+              "Every property is thoroughly verified to ensure accuracy and legitimacy. Rent with confidence.",
+            icon: <BiCheckCircle className="w-6 h-6 text-green-600" />,
+            iconBg: "bg-green-100",
+          },
+          {
+            title: "Trusted Agents",
+            description:
+              "Connect with experienced, professional agents who prioritize your needs and preferences.",
+            icon: <BiShield className="w-6 h-6 text-blue-600" />,
+            iconBg: "bg-blue-100",
+          },
+          {
+            title: "Nationwide Coverage",
+            description:
+              "Browse properties across the United States. Find your ideal home wherever you want to be.",
+            icon: <BiMapPin className="w-6 h-6 text-purple-600" />,
+            iconBg: "bg-purple-100",
+          },
+        ]}
+      />
+
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-blue-700">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Ready to Find Your Dream Home?
+          </h2>
+          <p className="text-blue-100 text-lg mb-8">
+            Browse thousands of verified rental properties nationwide.
+          </p>
+          <Link to="/listings">
+            <Button
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-gray-100"
+            >
+              Browse All Listings
+              <BsArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
         </div>
       </section>
     </div>

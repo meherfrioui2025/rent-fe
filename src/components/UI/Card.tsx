@@ -7,7 +7,7 @@ interface BaseProps extends HTMLAttributes<HTMLDivElement> {
 const Card: FC<BaseProps> = ({ children, className = "", ...props }) => {
   return (
     <div
-      className={`rounded-xl border bg-white text-gray-900 shadow ${className}`}
+      className={`rounded-xl border bg-white text-gray-200 shadow ${className}`}
       {...props}
     >
       {children}
